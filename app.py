@@ -123,6 +123,9 @@ if df is not None and not df.empty:
                                 if "Return all attributes" in return_category or "EU DoC number" in return_category:
                                     st.markdown(f"- EU DoC Number: {row.get('EU DoC number', 'N/A')}")
 
+                            
+                            if "Return all attributes" in return_category or "EU TDA CERT" in return_category:
+                                st.markdown(f"- EU TDA CERT: {row['EU TDA CERT']}")
                             if "Return all attributes" in return_category or "SSCP" in return_category:
                                 st.markdown(f"- SSCP: {row['SSCP']}")
                             if "Return all attributes" in return_category or "IFU" in return_category:
